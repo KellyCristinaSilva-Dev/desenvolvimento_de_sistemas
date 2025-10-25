@@ -1,0 +1,158 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f6f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #002147;
+  color: white;
+  text-align: center;
+}
+
+banner {
+  width: 100%;
+  height: auto;
+  border-bottom: 4px solid #002147;
+}
+
+menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #002147;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+menu li {
+  margin: 0;
+}
+
+menu a {
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+menu a:hover,
+menu a[aria-current="page"] {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: #002147;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+tabela-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  background-color: #0056b3;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #002147;
+  color: #fff;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f3f6fb;
+}
+
+tbody tr:hover {
+  background-color: #e9f0fb;
+  transition: background 0.3s ease;
+}
+
+tfoot {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+descricao-tabela {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #333;
+  background-color: #eef3fa;
+  border-left: 4px solid #0056b3;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  background-color: #002147;
+  color: white;
+  padding: 12px 0;
+  margin-top: 40px;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
+}
+
+:focus {
+  outline: 3px solid #ffcc00;
+  outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu a {
+    text-align: center;
+    padding: 14px;
+  }
+
+  table th, table td {
+    font-size: 0.9rem;
+  }
+}

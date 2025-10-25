@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulário de Contato - IBC</title>
+    <link rel="stylesheet" href="css/contato.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <img src="imgs/bannerCurso.png"
+            alt="Banner do Curso Técnico em Desenvolvimento de Sistemas do Instituto Benjamin Constant. Fundo azul com o logotipo do IBC à esquerda e título ao centro."
+            class="banner">
+
+        <nav aria-label="Menu principal">
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="contato.html">Voltar ao Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulário de Contato</h1>
+
+        <form id="form-contato" autocomplete="off">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <div class="botoes">
+                <button type="submit">Enviar</button>
+                <button type="reset" class="botao-limpar">Limpar</button>
+            </div>
+
+            <p id="msgAviso" class="oculto" role="alert" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Instituto Benjamin Constant - 2025</p>
+    </footer>
+
+    <script type="module" src="dist/formulario.js"></script>
+    
+</body>
+</html>

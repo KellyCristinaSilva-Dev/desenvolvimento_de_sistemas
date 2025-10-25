@@ -1,0 +1,168 @@
+/* ----------------------------
+   Estilo geral
+----------------------------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f7fa;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ----------------------------
+   Banner
+----------------------------- */
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 4px solid #003366;
+}
+
+/* ----------------------------
+   Menu principal
+----------------------------- */
+nav {
+  background-color: #003366;
+  border-bottom: 2px solid #002244;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s, outline 0.2s;
+}
+
+.menu a:hover,
+.menu a[aria-current="page"] {
+  background-color: #0055a5;
+}
+
+.menu a:focus {
+  outline: 3px solid #ffcc00;
+  outline-offset: 3px;
+}
+
+/* ----------------------------
+   Conteúdo
+----------------------------- */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+/* ----------------------------
+   Botões e links
+----------------------------- */
+.btn-mapa {
+  display: inline-block;
+  background-color: #003366;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-mapa:hover {
+  background-color: #0055a5;
+  transform: scale(1.03);
+}
+
+.btn-mapa:focus {
+  outline: 3px solid #ffcc00;
+  outline-offset: 2px;
+}
+
+.botao-acessivel {
+  background-color: #004c99;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-acessivel:hover {
+  background-color: #0066cc;
+  transform: scale(1.03);
+}
+
+.botao-acessivel:focus {
+  outline: 3px solid #ffcc00;
+  outline-offset: 3px;
+}
+
+/* ----------------------------
+   Mapa e descrição
+----------------------------- */
+.mapa {
+  margin: 25px 0;
+}
+
+.descricao-mapa {
+  font-size: 0.95em;
+  color: #333;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* ----------------------------
+   Rodapé
+----------------------------- */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.95em;
+  border-top: 4px solid #002244;
+}
+
+/* ----------------------------
+   Responsividade
+----------------------------- */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu a {
+    text-align: center;
+    border-top: 1px solid #004080;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    height: auto;
+  }
+}

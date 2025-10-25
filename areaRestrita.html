@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>Área Restrita - Curso Técnico em Desenvolvimento de Sistemas</title>
+  <link rel="stylesheet" href="css/areaRestrita.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <img src="imgs/bannerCurso.png"
+      alt="Banner do Curso Técnico em Desenvolvimento de Sistemas do Instituto Benjamin Constant. Fundo azul com o logotipo do IBC à esquerda e título ao centro."
+      class="banner">
+
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="corpoDocente.html">Corpo Docente</a></li>
+        <li><a href="modulosDisciplinas.html">Módulos & Disciplinas</a></li>
+        <li><a href="turmasAnteriores.html">Turmas Anteriores</a></li>
+        <li><a href="video.html">Vídeo de Apresentação</a></li>
+        <li><a href="endereco.html">Endereço Institucional</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="areaRestrita.html" aria-current="page">Área Restrita</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Área Restrita</h1>
+    <p>Informe suas credenciais para acessar o painel de mensagens.</p>
+
+    <form id="formLogin" autocomplete="off" class="form-login">
+      <label for="email">Usuário ou e-mail:</label>
+      <input type="text" id="email" name="email" required aria-required="true">
+
+      <label for="senha">Senha:</label>
+      <div class="campo-senha">
+        <input type="password" id="senha" name="senha" required aria-required="true">
+
+        <button 
+          type="button" 
+          id="mostrar-senha" 
+          aria-label="Mostrar ou ocultar senha" 
+          aria-pressed="false"
+          title="Mostrar ou ocultar senha"
+        >
+          👁
+        </button>
+      </div>
+
+      <div class="botoes">
+        <button type="submit" class="botao-enviar">Entrar</button>
+        <button type="reset" class="botao-limpar">Limpar</button>
+      </div>
+
+      <p id="mensagem" class="mensagem" role="alert" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; Instituto Benjamin Constant - 2025</p>
+  </footer>
+
+  <script type="module" src="dist/areaRestrita.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #004a8d;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li a {
+  display: block;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu li a:hover,
+.menu li a[aria-current="page"],
+.menu li a:focus {
+  background-color: #e8b200;
+  color: #222;
+  outline: none;
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 2px solid #004a8d;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 74, 141, 0.2);
+}
+
+h1 {
+  color: #004a8d;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Formulário ===== */
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: bold;
+  color: #004a8d;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  border-color: #004a8d;
+  box-shadow: 0 0 4px #004a8d;
+  outline: 2px solid transparent;
+}
+
+.campo-senha {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#mostrar-senha {
+  position: absolute;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #004a8d;
+  transition: transform 0.2s ease;
+}
+
+#mostrar-senha:hover,
+#mostrar-senha:focus {
+  transform: scale(1.2);
+  color: #e8b200;
+  outline: none;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.botao-enviar,
+.botao-limpar {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.botao-enviar {
+  background-color: #004a8d;
+  color: #fff;
+}
+
+.botao-enviar:hover,
+.botao-enviar:focus {
+  background-color: #e8b200;
+  color: #222;
+}
+
+.botao-limpar {
+  background-color: #ccc;
+  color: #222;
+}
+
+.botao-limpar:hover,
+.botao-limpar:focus {
+  background-color: #bbb;
+}
+
+.mensagem {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+  min-height: 1.5rem;
+}
+
+.mensagem.sucesso {
+  color: #0a7a26;
+}
+
+.mensagem.erro {
+  color: #b00020;
+}
+
+footer {
+  background-color: #004a8d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}

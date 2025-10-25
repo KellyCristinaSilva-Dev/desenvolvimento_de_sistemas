@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Painel de Mensagens - Área Restrita</title>
+    <link rel="stylesheet" href="css/areaRestrita.css">
+    <link rel="stylesheet" href="css/painelMensagens.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="imgs/bannerCurso.png"
+            alt="Banner do Curso Técnico em Desenvolvimento de Sistemas do Instituto Benjamin Constant. Fundo azul com logotipo do IBC à esquerda e título do curso ao centro."
+            class="banner">
+
+        <nav aria-label="Menu principal">
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="areaRestrita.html" aria-current="page">Área Restrita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Painel de Mensagens Recebidas</h1>
+        <p>Mensagens enviadas pelo formulário de contato.</p>
+
+        <p id="msgAviso" class="mensagemAviso" style="display: none" ;></p>
+
+        <table id="tabelaMensagens" border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Mensagem</th>
+                    <th>Data</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="botoes-controle">
+            <button id="limparTudo" class="botao-limpar">🧹 Limpar todas as Mensagens</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Instituto Benjamin Constant - 2025</p>
+    </footer>
+
+    <script type="module" src="dist/painelMensagem.js"></script>
+
+</body>
+
+</html>

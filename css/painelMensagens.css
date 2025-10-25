@@ -1,0 +1,163 @@
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: #f7f9fc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #004a8d;
+  color: white;
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.menu {
+  background-color: #004a8d;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  margin: 5px 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.menu a:hover,
+.menu a[aria-current="page"] {
+  background-color: #e8b200;
+  color: #222;
+}
+
+/* ======== Conteúdo principal ======== */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border: 2px solid #004a8d;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 74, 141, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #004a8d;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #004a8d;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td {
+  vertical-align: top;
+}
+
+/* ======== Mensagem de aviso ======== */
+.mensagemAviso {
+  color: #b30000;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #004a8d;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e8b200;
+  color: #222;
+}
+
+.botao-limpar {
+  margin-top: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ccc;
+  color: #222;
+}
+
+.botao-limpar:hover {
+  background-color: #bbb;
+}
+
+footer {
+  text-align: center;
+  background-color: #004a8d;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  table, th, td {
+    font-size: 0.85rem;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu li {
+    margin: 5px 0;
+  }
+}
