@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #004a8d;
+  background-color: #003366;
   padding: 0;
   margin: 0;
 }
@@ -31,10 +31,10 @@ body {
 }
 
 .menu li a:hover,
-.menu li a[aria-current="page"],
-.menu li a:focus {
-  background-color: #e8b200;
-  color: #222;
+.menu li a:focus, 
+.menu li a[aria-current="page"] {
+    background-color: #002147;
+  color: #ffcc00;
   outline: none;
 }
 
