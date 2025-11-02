@@ -94,7 +94,7 @@ caption {
 th, td {
   border: 1px solid #ccc;
   padding: 10px;
-  text-align: left;
+  text-align: center;
   vertical-align: middle;
 }
 
@@ -118,7 +118,7 @@ tfoot {
   font-weight: bold;
 }
 
-descricao-tabela {
+desc-tabela {
   margin-top: 10px;
   font-size: 0.95rem;
   color: #333;
